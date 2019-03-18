@@ -32,25 +32,31 @@ public class FileUploadToProfile {
         driver.findElement(By.cssSelector("input[type='password']")).sendKeys(User.password);
         driver.findElement(By.cssSelector("button")).click();
 
-        WebDriverWait wait= new WebDriverWait(driver, 8);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("app-sidebar-nav")));
 
-        driver.navigate().to(DevEnv.baseUrl() + "accounts/clients/1864/profile");
+        WebDriverWait wait= new WebDriverWait(driver, 12);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("app-header")));
 
-        WebDriverWait wait2 = new WebDriverWait(driver, 8);
-        wait2.until(ExpectedConditions.presenceOfElementLocated(By.className("title")));
+        driver.findElement(By.cssSelector("ul.top a[title='Accounts']")).click();
+        driver.findElement(By.cssSelector(".navigation li:nth-child(3) a[title=Clients]")).click();
 
-        WebElement upload = driver.findElement(By.cssSelector("[data-element=febacefe-2596-44f1-8a20-3282670b75b2]"));  // data-element  febacefe-2596-44f1-8a20-3282670b75b2 -> nest document-container empty | if not empty -> nest button below
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".app-table")));
+
+        driver.findElement(By.cssSelector("tbody tr:nth-child(1)")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.btn-group:nth-child(2) a.btn.btn-secondary:first-child")));
+
+        driver.findElement(By.cssSelector("div.btn-group:nth-child(2) a.btn.btn-secondary:first-child")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("h5.title")));
+
+
+        WebElement upload = driver.findElement(By.cssSelector(".group-layout div.row:nth-child(5) div.col-6:first-child div.document.form-group"));
         upload.click();
-        uploadFile("/home/marcin/Pictures/IP.png");
+        uploadFile("/home/marcin/Videos/IP.png");
 
 
+        //TODO:
+        //one more click needed
+        // if for empty upload field container
 
-//  TODO  figure out client table selectors
-//        WebElement element = driver.findElement(By.cssSelector());
-//        element.click();
-//        WebElement button = ((ChromeDriver) driver).findElementByName("Profile");
-//        button.click();
     }
 
     public static void setClipboardData(String string) {
@@ -70,7 +76,7 @@ public class FileUploadToProfile {
             robot.keyRelease(KeyEvent.VK_V);
             robot.keyRelease(KeyEvent.VK_CONTROL);
             robot.keyPress(KeyEvent.VK_ENTER);
-            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER); //2 enters to add?
         } catch (Exception exp) {
             exp.printStackTrace();
         }

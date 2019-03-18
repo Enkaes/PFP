@@ -33,9 +33,12 @@ public class CreateNewClient {
         WebDriverWait wait = new WebDriverWait(driver, 8);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("app-sidebar-nav")));
 
-        driver.get(DevEnv.baseUrl()+ "accounts/clients/");
+        driver.findElement(By.cssSelector("ul.top a[title='Accounts']")).click();
+        driver.findElement(By.cssSelector(".navigation li:nth-child(3) a[title=Clients]")).click();
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".app-table")));
+
+
         WebElement css = driver.findElement(By.cssSelector("a.btn.btn-primary.btn-main"));
         css.click();
 
@@ -57,8 +60,6 @@ public class CreateNewClient {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.className("title")));
 
 //      assertEquals(ExpectedConditions.presenceOfElementLocated(By.className("messagehere")));
-
-
 
 
 

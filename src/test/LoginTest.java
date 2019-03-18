@@ -30,9 +30,7 @@ public class LoginTest {
         driver.findElement(By.cssSelector("input[type='password']")).sendKeys(User.password);
         driver.findElement(By.cssSelector("button")).click();
 
-        Login.login();
-
-
+//      Login.login();
 //      WaitForReload(WebDriver driver = new ChromeDriver());
 
 //      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

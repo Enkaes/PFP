@@ -40,8 +40,11 @@ public class MethodsPlayground {
         driver.findElement(By.cssSelector("input[id=email]"));
         driver.findElement(By.className(".app-table"));
 
+        driver.findElement(By.cssSelector("button[title='ButtonText']")).click();
+        driver.findElement(By.cssSelector("ul.top a[title='Accounts']")).click();
+
         driver.findElement(By.cssSelector("input[type='text']:first-of-type")).sendKeys("Name");   //first of many of the same type
-        driver.findElement(By.cssSelector("input[type='text']:nth-of-type(2)")).sendKeys("Name");  // second of many of same tye
+        driver.findElement(By.cssSelector("input[type='text']:nth-of-type(3)")).sendKeys("Name");  // third of many of same tye
 
         WebElement element=driver.findElement(By.cssSelector("input[type='list']"));
         Select se=new Select(element);
