@@ -1,13 +1,11 @@
 package test;
 
 import AppEnv.DevEnv;
-import AppEnv.User;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -46,6 +44,8 @@ public class MethodsPlayground {
         driver.findElement(By.cssSelector("input[type='text']:first-of-type")).sendKeys("Name");   //first of many of the same type
         driver.findElement(By.cssSelector("input[type='text']:nth-of-type(3)")).sendKeys("Name");  // third of many of same tye
 
+
+        //SELECT:
         WebElement element=driver.findElement(By.cssSelector("input[type='list']"));
         Select se=new Select(element);
 
@@ -53,9 +53,11 @@ public class MethodsPlayground {
         se.selectByIndex(1);
         se.selectByVisibleText("Client");
 
-        driver.wait(3);
+        //select element and count children, needs select tag, not div though, works for dropdowns   getOptions below
+        WebElement selectElement = driver.findElement(By.cssSelector(".group-layout div.row:nth-child(5) div.list-group.list-group-flush"));
+        Select listBox = new Select(selectElement);
+        int fieldcount =  listBox.getOptions().size();
     }
-
 
     public void getDropdownOptions(){
 

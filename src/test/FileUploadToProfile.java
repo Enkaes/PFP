@@ -1,27 +1,27 @@
 package test;
 
-
 import AppEnv.DevEnv;
-import AppEnv.Helper.Login;
 import AppEnv.User;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
+
 public class FileUploadToProfile {
 
 
     public static void main(String[] args) {
 
-        System.setProperty("webdriver.chrome.driver", "/home/marcin/IdeaProjects/tests/chromedriver");
+//        System.setProperty("webdriver.chrome.driver", "/home/marcin/IdeaProjects/tests/chromedriver");  //Ubuntu
+        System.setProperty("webdriver.chrome.driver", "C://Users/Marcin/IdeaProjects/driver/chromedriver.exe");  //Winda
         WebDriver driver = new ChromeDriver();
 
         //        Login.login();
@@ -38,24 +38,52 @@ public class FileUploadToProfile {
 
         driver.findElement(By.cssSelector("ul.top a[title='Accounts']")).click();
         driver.findElement(By.cssSelector(".navigation li:nth-child(3) a[title=Clients]")).click();
-
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".app-table")));
-
         driver.findElement(By.cssSelector("tbody tr:nth-child(1)")).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.btn-group:nth-child(2) a.btn.btn-secondary:first-child")));
 
+        //TODO: implicit or fluent wait here
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.btn-group:nth-child(2) a.btn.btn-secondary:first-child")));
         driver.findElement(By.cssSelector("div.btn-group:nth-child(2) a.btn.btn-secondary:first-child")).click();
+
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("h5.title")));
 
+//        WebElement selectElement = driver.findElement(By.cssSelector(".group-layout div.row:nth-child(5) div.list-group.list-group-flush"));
+//        Select listBox = new Select(selectElement);
+//        int fieldcount =  listBox.getOptions().size();
 
-        WebElement upload = driver.findElement(By.cssSelector(".group-layout div.row:nth-child(5) div.col-6:first-child div.document.form-group"));
-        upload.click();
-        uploadFile("/home/marcin/Videos/IP.png");
+        //TODO: proper wait
+        //add wait to helper
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        // count number of children of div
+        int filecount = driver.findElements(By.cssSelector(".group-layout div.row:nth-child(5) div.list-group.list-group-flush")).size();
 
 
-        //TODO:
-        //one more click needed
-        // if for empty upload field container
+        WebElement docfield = driver.findElement(By.cssSelector(".group-layout div.row:nth-child(5) button.btn.more.btn-block"));
+        docfield.click();
+        uploadFile("C:\\Users\\Marcin\\Desktop\\różne\\abcd.JPG");
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        int filecount2 = driver.findElements(By.cssSelector(".group-layout div.row:nth-child(5) div.list-group.list-group-flush")).size();
+
+//        WebElement selectElement2 = driver.findElement(By.cssSelector(".group-layout div.row:nth-child(5) div.list-group.list-group-flush"));
+//        Select listBox2 = new Select(selectElement);
+//        int fieldcount2 =  listBox.getOptions().size();
+
+        System.out.println(filecount);
+        System.out.println(filecount2);
+
+        Assert.assertTrue("Uploaded Successfully" ,filecount2>filecount);
+        Assert.assertNotSame(filecount2, filecount);
 
     }
 
@@ -66,7 +94,6 @@ public class FileUploadToProfile {
 
     public static void uploadFile(String fileLocation) {
         try {
-            //Setting clipboard with file location
             setClipboardData(fileLocation);
             //native key strokes for CTRL, V and ENTER keys
             Robot robot = new Robot();
