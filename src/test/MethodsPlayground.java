@@ -1,6 +1,6 @@
 package test;
 
-import AppEnv.DevEnv;
+import AppEnv.Setup;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +20,7 @@ public class MethodsPlayground {
         System.setProperty("webdriver.chrome.driver", "/home/marcin/IdeaProjects/tests/chromedriver");
         WebDriver driver = new ChromeDriver();
 
-        driver.get(DevEnv.baseUrl());
+        driver.get(Setup.baseUrl());
 
     }
 
@@ -30,7 +30,7 @@ public class MethodsPlayground {
     {
         System.setProperty("webdriver.chrome.driver", "/home/marcin/IdeaProjects/tests/chromedriver");
         WebDriver driver = new ChromeDriver();
-        driver.get(DevEnv.baseUrl());
+        driver.get(Setup.baseUrl());
 
 
 //      title, id or class
@@ -64,7 +64,7 @@ public class MethodsPlayground {
         System.setProperty("webdriver.chrome.driver", "/home/marcin/IdeaProjects/tests/chromedriver");
         WebDriver driver = new ChromeDriver();
 
-        driver.get(DevEnv.baseUrl());
+        driver.get(Setup.baseUrl());
 
         WebElement dropdown=driver.findElement(By.id("dropdown"));   //finds dropdown by id, lists all available values and prints them
         Select se=new Select(dropdown);
@@ -79,7 +79,7 @@ public class MethodsPlayground {
 
         System.setProperty("webdriver.chrome.driver", "/home/marcin/IdeaProjects/tests/chromedriver");
         WebDriver driver = new ChromeDriver();
-        driver.get(DevEnv.baseUrl());
+        driver.get(Setup.baseUrl());
 
         WebDriverWait wait= new WebDriverWait(driver, 5);
 //        wait.until(ExpectedConditions.isDisplayed());̣

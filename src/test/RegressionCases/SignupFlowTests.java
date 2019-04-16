@@ -1,6 +1,6 @@
 package test.RegressionCases;
 
-import AppEnv.DevEnv;
+import AppEnv.Setup;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,7 +24,7 @@ public class SignupFlowTests {
     @Test(priority = 1)
     public void signUpCheck(){
 
-        driver.get(DevEnv.baseUrl() + "signup");
+        driver.get(Setup.baseUrl() + "signup");
 
         driver.findElement(By.cssSelector("div.form-group input.form-control.form-control-lg")).sendKeys("RegressionCompany");
         driver.findElement(By.cssSelector("input[type='first_name']")).sendKeys("RegressionName");
@@ -51,7 +51,7 @@ public class SignupFlowTests {
     @Test(priority = 2)
     public void resetPasswordFlow(){
 
-        driver.get(DevEnv.baseUrl() + "signin");
+        driver.get(Setup.baseUrl() + "signin");
 
         driver.findElement(By.cssSelector("a.text-secondary")).click();
 

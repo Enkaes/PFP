@@ -1,6 +1,6 @@
 package test;
 
-import AppEnv.DevEnv;
+import AppEnv.Setup;
 import AppEnv.User;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -15,26 +15,13 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
 
-public class FileUploadToProfile {
+public class FileUploadToProfile extends Setup{
 
 
     public static void main(String[] args) {
 
-//        System.setProperty("webdriver.chrome.driver", "/home/marcin/IdeaProjects/tests/chromedriver");  //Ubuntu
-        System.setProperty("webdriver.chrome.driver", "C://Users/Marcin/IdeaProjects/driver/chromedriver.exe");  //Winda
-        WebDriver driver = new ChromeDriver();
 
-        //        Login.login();
-
-        driver.get(DevEnv.baseUrl());
-
-        driver.findElement(By.cssSelector("input[type='email']")).sendKeys(User.name);
-        driver.findElement(By.cssSelector("input[type='password']")).sendKeys(User.password);
-        driver.findElement(By.cssSelector("button")).click();
-
-
-        WebDriverWait wait= new WebDriverWait(driver, 12);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("app-header")));
+        WebDriverWait wait= new WebDriverWait(driver, 8);
 
         driver.findElement(By.cssSelector("ul.top a[title='Accounts']")).click();
         driver.findElement(By.cssSelector(".navigation li:nth-child(3) a[title=Clients]")).click();
