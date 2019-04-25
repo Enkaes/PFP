@@ -25,7 +25,7 @@ public class MethodsPlayground {
     }
 
     // select methods 101
-    public void selectMethods() throws InterruptedException
+    public void selectMethods()
 
     {
         System.setProperty("webdriver.chrome.driver", "/home/marcin/IdeaProjects/tests/chromedriver");
@@ -34,16 +34,12 @@ public class MethodsPlayground {
 
 
 //      title, id or class
-        driver.findElement(By.cssSelector("button[title=\"New Account\"]"));
+        driver.findElement(By.cssSelector("button[title='New Account']"));
         driver.findElement(By.cssSelector("input[id=email]"));
         driver.findElement(By.className(".app-table"));
 
         driver.findElement(By.cssSelector("button[title='ButtonText']")).click();
         driver.findElement(By.cssSelector("ul.top a[title='Accounts']")).click();
-
-        driver.findElement(By.cssSelector("input[type='text']:first-of-type")).sendKeys("Name");   //first of many of the same type
-        driver.findElement(By.cssSelector("input[type='text']:nth-of-type(3)")).sendKeys("Name");  // third of many of same tye
-
 
         //SELECT:
         WebElement element=driver.findElement(By.cssSelector("input[type='list']"));

@@ -2,16 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9527ac-685e-443f-894c-b71170e61eba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AppEnv/Helper/ClientPanelAccess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/RegressionCases/EngagementTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppEnv/Helper/Navigator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppEnv/Helper/WaitClasses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/RegressionCases/AdvisorUserTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/RegressionCases/InstallTemplate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppEnv/DevEnv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppEnv/Setup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppEnv/Helper/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppEnv/Helper/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tests/AppEnv/Helper/ClientPanelAccess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tests/AppEnv/Helper/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tests/AppEnv/Helper/WaitForReload$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tests/AppEnv/Helper/WaitForReload.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tests/AppEnv/Setup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tests/AppEnv/Setup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tests/test/FileUploadToProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tests/test/FileUploadToProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tests/test/LoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tests/test/RegressionCases/CreateNewClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tests/test/RegressionCases/CreateNewClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tests/test/RegressionCases/EngagementTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tests/test/RegressionCases/EngagementTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppEnv/Helper/ClientPanelAccess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppEnv/Helper/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppEnv/Helper/WaitForReload.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppEnv/Setup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppEnv/Setup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/FileUploadToProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/FileUploadToProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/LoginTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/MethodsPlayground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MethodsPlayground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/PrecisePing.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/RegressionCases/CreateNewClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/RegressionCases/CreateNewClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/RegressionCases/SignupFlowTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/RegressionCases/SignupFlowTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/RegressionCases/EngagementTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/RegressionCases/EngagementTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,27 +37,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FileUploadToProfile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/FileUploadToProfile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="95" column="9" lean-forward="true" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Setup.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppEnv/Setup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="45" column="65" lean-forward="true" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
+            <state relative-caret-position="138">
+              <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1313#1314#0" expanded="true" />
-                <element signature="e#1343#1344#0" expanded="true" />
+                <element signature="e#2039#2040#0" expanded="true" />
+                <element signature="e#2069#2070#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,8 +54,8 @@
       <file leaf-file-name="CreateNewClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/CreateNewClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="699">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="272">
+              <caret line="50" column="137" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="137" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,11 +63,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EngagementTests.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/EngagementTests.java">
+      <file leaf-file-name="Navigator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppEnv/Helper/Navigator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="62" column="115" selection-start-line="62" selection-start-column="115" selection-end-line="62" selection-end-column="115" />
+            <state relative-caret-position="546">
+              <caret line="40" column="91" selection-start-line="40" selection-start-column="91" selection-end-line="40" selection-end-column="91" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdvisorUserTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/AdvisorUserTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="114" column="35" lean-forward="true" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,20 +119,25 @@
         <option value="$PROJECT_DIR$/src/test/Login.java" />
         <option value="$PROJECT_DIR$/src/java/setup/DevEnv.java" />
         <option value="$PROJECT_DIR$/src/AppEnv/ChromedriverProperty.java" />
-        <option value="$PROJECT_DIR$/src/AppEnv/User.java" />
         <option value="$PROJECT_DIR$/src/test/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/test/MethodsPlayground.java" />
         <option value="$PROJECT_DIR$/src/test/CreateNewClient.java" />
         <option value="$PROJECT_DIR$/src/AppEnv/DevEnv.java" />
-        <option value="$PROJECT_DIR$/src/test/FileUploadToProfile.java" />
         <option value="$PROJECT_DIR$/src/AppEnv/Helper/Login.java" />
-        <option value="$PROJECT_DIR$/src/AppEnv/Helper/WaitForReload.java" />
         <option value="$PROJECT_DIR$/src/AppEnv/Helper/WaitForElement.java" />
         <option value="$PROJECT_DIR$/src/test/RegressionCases/SignupFlowTests.java" />
         <option value="$PROJECT_DIR$/src/AppEnv/Helper/ClientPanelAccess.java" />
-        <option value="$PROJECT_DIR$/src/AppEnv/Setup.java" />
-        <option value="$PROJECT_DIR$/src/test/RegressionCases/CreateNewClient.java" />
+        <option value="$PROJECT_DIR$/src/AppEnv/User.java" />
+        <option value="$PROJECT_DIR$/src/test/Navigator.java" />
+        <option value="$PROJECT_DIR$/src/test/FileUploadToProfile.java" />
+        <option value="$PROJECT_DIR$/src/AppEnv/Helper/WaitForReload.java" />
+        <option value="$PROJECT_DIR$/src/AppEnv/Helper/WaitClasses.java" />
         <option value="$PROJECT_DIR$/src/test/RegressionCases/EngagementTests.java" />
+        <option value="$PROJECT_DIR$/src/test/MethodsPlayground.java" />
+        <option value="$PROJECT_DIR$/src/test/RegressionCases/CreateNewClient.java" />
+        <option value="$PROJECT_DIR$/src/test/RegressionCases/InstallTemplate.java" />
+        <option value="$PROJECT_DIR$/src/AppEnv/Setup.java" />
+        <option value="$PROJECT_DIR$/src/AppEnv/Helper/Navigator.java" />
+        <option value="$PROJECT_DIR$/src/test/RegressionCases/AdvisorUserTests.java" />
       </list>
     </option>
   </component>
@@ -135,7 +154,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,6 +196,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -204,8 +223,66 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.EngagementTests.accessEngagement">
-    <configuration name="CreateNewClient.createWithExistingEmail" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AdvisorUserTests.addingTeam">
+    <configuration name="AdvisorUserTests.addingTeam" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.RegressionCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="test.RegressionCases" />
+      <option name="MAIN_CLASS_NAME" value="test.RegressionCases.AdvisorUserTests" />
+      <option name="METHOD_NAME" value="addingTeam" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="AdvisorUserTests.advisorPasswordChange" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.RegressionCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="test.RegressionCases" />
+      <option name="MAIN_CLASS_NAME" value="test.RegressionCases.AdvisorUserTests" />
+      <option name="METHOD_NAME" value="advisorPasswordChange" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="CreateNewClient.changeTeamIf" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="tests" />
       <extension name="coverage">
         <pattern>
@@ -218,7 +295,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="test.RegressionCases" />
       <option name="MAIN_CLASS_NAME" value="test.RegressionCases.CreateNewClient" />
-      <option name="METHOD_NAME" value="createWithExistingEmail" />
+      <option name="METHOD_NAME" value="changeTeamIf" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" />
@@ -234,7 +311,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="EngagementTests.accessEngagement" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateNewClient.createClientTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="tests" />
       <extension name="coverage">
         <pattern>
@@ -246,8 +323,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="test.RegressionCases" />
-      <option name="MAIN_CLASS_NAME" value="test.RegressionCases.EngagementTests" />
-      <option name="METHOD_NAME" value="accessEngagement" />
+      <option name="MAIN_CLASS_NAME" value="test.RegressionCases.CreateNewClient" />
+      <option name="METHOD_NAME" value="createClientTest" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" />
@@ -263,7 +340,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="EngagementTests.createEngagement" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="InstallTemplate.installTemplate" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="tests" />
       <extension name="coverage">
         <pattern>
@@ -275,66 +352,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="test.RegressionCases" />
-      <option name="MAIN_CLASS_NAME" value="test.RegressionCases.EngagementTests" />
-      <option name="METHOD_NAME" value="createEngagement" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="EngagementTests.createEngagements" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.RegressionCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="test.RegressionCases" />
-      <option name="MAIN_CLASS_NAME" value="test.RegressionCases.EngagementTests" />
-      <option name="METHOD_NAME" value="createEngagements" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="EngagementTests.sendEngagement" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.RegressionCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="test.RegressionCases" />
-      <option name="MAIN_CLASS_NAME" value="test.RegressionCases.EngagementTests" />
-      <option name="METHOD_NAME" value="sendEngagement" />
+      <option name="MAIN_CLASS_NAME" value="test.RegressionCases.InstallTemplate" />
+      <option name="METHOD_NAME" value="installTemplate" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" />
@@ -351,19 +370,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.CreateNewClient.createWithExistingEmail" />
-      <item itemvalue="TestNG.EngagementTests.sendEngagement" />
-      <item itemvalue="TestNG.EngagementTests.createEngagement" />
-      <item itemvalue="TestNG.EngagementTests.accessEngagement" />
-      <item itemvalue="TestNG.EngagementTests.createEngagements" />
+      <item itemvalue="TestNG.AdvisorUserTests.advisorPasswordChange" />
+      <item itemvalue="TestNG.InstallTemplate.installTemplate" />
+      <item itemvalue="TestNG.CreateNewClient.createClientTest" />
+      <item itemvalue="TestNG.CreateNewClient.changeTeamIf" />
+      <item itemvalue="TestNG.AdvisorUserTests.addingTeam" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.EngagementTests.accessEngagement" />
-        <item itemvalue="TestNG.EngagementTests.createEngagement" />
-        <item itemvalue="TestNG.EngagementTests.createEngagements" />
-        <item itemvalue="TestNG.CreateNewClient.createWithExistingEmail" />
-        <item itemvalue="TestNG.EngagementTests.sendEngagement" />
+        <item itemvalue="TestNG.AdvisorUserTests.addingTeam" />
+        <item itemvalue="TestNG.InstallTemplate.installTemplate" />
+        <item itemvalue="TestNG.CreateNewClient.createClientTest" />
+        <item itemvalue="TestNG.CreateNewClient.changeTeamIf" />
+        <item itemvalue="TestNG.AdvisorUserTests.advisorPasswordChange" />
       </list>
     </recent_temporary>
   </component>
@@ -381,89 +400,65 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EngagementTests_accessEngagement - 2019.04.12 at 16h 53m 12s.xml">
-      <configuration name="EngagementTests.accessEngagement" configurationId="TestNG" />
+    <history-entry file="AdvisorUserTests_addingTeam - 2019.04.23 at 17h 24m 21s.xml">
+      <configuration name="AdvisorUserTests.addingTeam" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EngagementTests_accessEngagement - 2019.04.12 at 17h 13m 46s.xml">
-      <configuration name="EngagementTests.accessEngagement" configurationId="TestNG" />
+    <history-entry file="AdvisorUserTests_addingTeam - 2019.04.23 at 17h 25m 04s.xml">
+      <configuration name="AdvisorUserTests.addingTeam" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EngagementTests_accessEngagement - 2019.04.12 at 17h 14m 11s.xml">
-      <configuration name="EngagementTests.accessEngagement" configurationId="TestNG" />
+    <history-entry file="AdvisorUserTests_addingTeam - 2019.04.23 at 17h 25m 33s.xml">
+      <configuration name="AdvisorUserTests.addingTeam" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EngagementTests_accessEngagement - 2019.04.12 at 17h 14m 42s.xml">
-      <configuration name="EngagementTests.accessEngagement" configurationId="TestNG" />
+    <history-entry file="AdvisorUserTests_addingTeam - 2019.04.23 at 17h 26m 13s.xml">
+      <configuration name="AdvisorUserTests.addingTeam" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EngagementTests_accessEngagement - 2019.04.12 at 17h 15m 30s.xml">
-      <configuration name="EngagementTests.accessEngagement" configurationId="TestNG" />
+    <history-entry file="AdvisorUserTests_addingTeam - 2019.04.23 at 17h 28m 14s.xml">
+      <configuration name="AdvisorUserTests.addingTeam" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EngagementTests_createEngagement - 2019.04.12 at 17h 16m 40s.xml">
-      <configuration name="EngagementTests.createEngagement" configurationId="TestNG" />
+    <history-entry file="AdvisorUserTests_addingTeam - 2019.04.23 at 17h 36m 34s.xml">
+      <configuration name="AdvisorUserTests.addingTeam" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EngagementTests_accessEngagement - 2019.04.12 at 17h 17m 05s.xml">
-      <configuration name="EngagementTests.accessEngagement" configurationId="TestNG" />
+    <history-entry file="AdvisorUserTests_addingTeam - 2019.04.23 at 17h 37m 14s.xml">
+      <configuration name="AdvisorUserTests.addingTeam" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EngagementTests_accessEngagement - 2019.04.12 at 17h 22m 47s.xml">
-      <configuration name="EngagementTests.accessEngagement" configurationId="TestNG" />
+    <history-entry file="AdvisorUserTests_addingTeam - 2019.04.23 at 17h 38m 14s.xml">
+      <configuration name="AdvisorUserTests.addingTeam" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EngagementTests_accessEngagement - 2019.04.12 at 17h 23m 10s.xml">
-      <configuration name="EngagementTests.accessEngagement" configurationId="TestNG" />
+    <history-entry file="AdvisorUserTests_addingTeam - 2019.04.23 at 17h 39m 08s.xml">
+      <configuration name="AdvisorUserTests.addingTeam" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EngagementTests_accessEngagement - 2019.04.12 at 17h 23m 43s.xml">
-      <configuration name="EngagementTests.accessEngagement" configurationId="TestNG" />
+    <history-entry file="AdvisorUserTests_addingTeam - 2019.04.23 at 17h 41m 00s.xml">
+      <configuration name="AdvisorUserTests.addingTeam" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-169" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32725322" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32939914" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2532189" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992" visible="true" weight="0.14925373" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992" visible="true" weight="0.14978679" />
       <window_info id="Structure" order="1" sideWeight="0.5008" side_tool="true" weight="0.141258" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2518363" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-    </layout>
-    <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35944206" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992" visible="true" weight="0.14285715" />
-      <window_info id="Structure" order="1" sideWeight="0.5008" side_tool="true" weight="0.141258" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2518363" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32939914" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32725322" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info id="Favorites" order="4" side_tool="true" />
-    </layout-to-restore>
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2518363" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32939914" />
+    </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -501,14 +496,130 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/RegressionCases/AdvisorUserTests.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/RegressionCases/AdvisorUserTests.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/MethodsPlayground.java">
+    <entry file="file://$PROJECT_DIR$/src/AppEnv/Setup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="1105">
+          <caret line="65" column="59" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2039#2040#0" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/CreateNewClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/InstallTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/AdvisorUserTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/SignupFlowTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/EngagementTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppEnv/Setup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="65" column="59" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2039#2040#0" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/CreateNewClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/InstallTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/EngagementTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="93" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/SignupFlowTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/AdvisorUserTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -517,11 +628,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/FileUploadToProfile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="1615">
+          <caret line="95" column="9" lean-forward="true" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppEnv/Setup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="65" lean-forward="true" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2039#2040#0" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/CreateNewClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/EngagementTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" column="115" selection-start-line="62" selection-start-column="115" selection-end-line="62" selection-end-column="115" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/MethodsPlayground.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/FileUploadToProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -538,8 +689,8 @@
           <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1313#1314#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#2039#2040#0" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -548,9 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="44" column="31" lean-forward="true" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -558,9 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -584,8 +729,8 @@
           <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1313#1314#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#2039#2040#0" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -594,33 +739,114 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/MethodsPlayground.java">
+    <entry file="file://$PROJECT_DIR$/src/AppEnv/Helper/WaitForElement.java" />
+    <entry file="file://$PROJECT_DIR$/src/AppEnv/Helper/Login.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/LoginTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/Navigator.java" />
+    <entry file="jar://$PROJECT_DIR$/../selenium libs/client-combined-3.141.59-sources.jar!/org/openqa/selenium/WebElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="884">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/testng/lib/testng.jar!/org/testng/AssertJUnit.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="174" column="18" lean-forward="true" selection-start-line="174" selection-start-column="18" selection-end-line="174" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppEnv/Helper/WaitForReload.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../selenium libs/client-combined-3.141.59-sources.jar!/org/openqa/selenium/support/ui/ExpectedCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppEnv/Helper/ClientPanelAccess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="45" lean-forward="true" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+        <state relative-caret-position="68">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="857" column="25" selection-start-line="857" selection-start-column="25" selection-end-line="857" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/FileUploadToProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/PrecisePing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/MethodsPlayground.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="40" column="81" lean-forward="true" selection-start-line="40" selection-start-column="81" selection-end-line="40" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppEnv/Helper/WaitClasses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="109" lean-forward="true" selection-start-line="11" selection-start-column="109" selection-end-line="11" selection-end-column="109" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppEnv/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/InstallTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/SignupFlowTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="46" column="58" lean-forward="true" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/EngagementTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1277">
+          <caret line="77" column="68" selection-start-line="77" selection-start-column="68" selection-end-line="77" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -629,68 +855,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppEnv/Setup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="45" column="65" lean-forward="true" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
+        <state relative-caret-position="138">
+          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1313#1314#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#2039#2040#0" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppEnv/Helper/WaitForElement.java">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppEnv/Helper/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/SignupFlowTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/FileUploadToProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="95" column="9" lean-forward="true" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="223">
+          <caret line="1833" column="18" selection-start-line="1833" selection-start-column="18" selection-end-line="1833" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/CreateNewClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="272">
+          <caret line="50" column="137" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="137" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/EngagementTests.java">
+    <entry file="file://$PROJECT_DIR$/src/AppEnv/Helper/Navigator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="62" column="115" selection-start-line="62" selection-start-column="115" selection-end-line="62" selection-end-column="115" />
+        <state relative-caret-position="546">
+          <caret line="40" column="91" selection-start-line="40" selection-start-column="91" selection-end-line="40" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RegressionCases/AdvisorUserTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="114" column="35" lean-forward="true" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

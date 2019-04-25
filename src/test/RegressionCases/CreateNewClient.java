@@ -1,6 +1,6 @@
 package test.RegressionCases;
 
-
+import AppEnv.Helper.Navigator;
 import AppEnv.Setup;
 import AppEnv.User;
 import net.bytebuddy.utility.RandomString;
@@ -15,15 +15,12 @@ import static org.testng.AssertJUnit.assertTrue;
 
 public class CreateNewClient extends Setup {
 
+    private Navigator navigator = new Navigator();
+
     @Test(priority=1)
     public void createClientTest() {
 
-        WebDriverWait wait3 = new WebDriverWait(driver, 3);
-
-        driver.findElement(By.cssSelector("ul.top a:nth-child(1)")).click();
-        driver.findElement(By.cssSelector(".navigation li:nth-child(3)")).click();
-
-        wait3.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".app-table")));
+        navigator.navigateToClients();
 
         int rowCount1 = 0;
 
@@ -63,8 +60,7 @@ public class CreateNewClient extends Setup {
 
         WebDriverWait wait3 = new WebDriverWait(driver, 3);
 
-        driver.findElement(By.cssSelector("ul.top a:nth-child(1)")).click();
-        driver.findElement(By.cssSelector(".navigation li:nth-child(3)")).click();
+        navigator.navigateToClients();
 
         wait3.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".app-table")));
 
@@ -95,12 +91,11 @@ public class CreateNewClient extends Setup {
     @Test(priority=3)
     public void deleteClientTest(){
 
-        WebDriverWait wait1 = new WebDriverWait(driver, 1);
+        WebDriverWait wait3 = new WebDriverWait(driver, 3);
 
-        driver.findElement(By.cssSelector("ul.top a:nth-child(1)")).click();
-        driver.findElement(By.cssSelector(".navigation li:nth-child(3)")).click();
+        navigator.navigateToClients();
 
-        wait1.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".app-table")));
+        wait3.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".app-table")));
 
         int rowCount3 = 0;
 
