@@ -71,20 +71,18 @@ public class AdvisorUserTests extends Setup {
         //Count invoices
         driver.get(Setup.baseUrl()+ "settings/history");
         wait3.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".app-table")));
-        Integer invoiceCount;
-        invoiceCount = driver.findElements(By.cssSelector(".app-table tr")).size();
+        int invoiceCount = driver.findElements(By.cssSelector(".app-table tr")).size();
 
         //Check billing for amount of Teams
         navigator.navigateToSubscription();
-        String billingteam1;
-        billingteam1 = driver.findElement(By.cssSelector("tbody tr:nth-child(2) td:nth-child(5)")).getText();
+        String billingteam1 = driver.findElement(By.cssSelector("tbody tr:nth-child(2) td:nth-child(5)")).getText();
 
         //Add new Team
         navigator.navigateToTeams();
         wait3.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.btn.btn-primary.btn-main")));
         driver.findElement(By.cssSelector("a.btn.btn-primary.btn-main")).click();
         driver.findElement(By.cssSelector("div.app-content-drawer input[type='text']")).sendKeys("TestTeam2");
-        driver.findElement(By.cssSelector("input[type='email']")).sendKeys("m.limont" + RandomString.make(3) + "@precisefp.com");
+        driver.findElement(By.cssSelector("input[type='email']")).sendKeys("m.limont+" + RandomString.make(3) + "@precisefp.com");
         driver.findElement(By.cssSelector("div.field-phone.input-group input")).sendKeys("3123121232");
         driver.findElement(By.cssSelector("button[type='Submit']")).click();
 
@@ -93,8 +91,7 @@ public class AdvisorUserTests extends Setup {
         //Recount invoices
         driver.get(Setup.baseUrl()+ "settings/history");
         wait3.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("a.btn.btn-sm.btn-secondary")));
-        Integer invoiceCount2;
-        invoiceCount2 = driver.findElements(By.cssSelector(".app-table tr")).size();
+        int invoiceCount2 = driver.findElements(By.cssSelector(".app-table tr")).size();
 
         if(invoiceCount2 > invoiceCount){
             System.out.println("New invoice added");
@@ -104,13 +101,10 @@ public class AdvisorUserTests extends Setup {
 
         //Recheck billing for Teams
         navigator.navigateToSubscription();
-        String billingteam2;
-        billingteam2 = driver.findElement(By.cssSelector("tbody tr:nth-child(2) td:nth-child(5)")).getText();
+        String billingteam2 = driver.findElement(By.cssSelector("tbody tr:nth-child(2) td:nth-child(5)")).getText();
 
-        Integer billingint2 = 0;
-        billingint2 = Integer.parseInt(billingteam2.substring(1));
-        Integer billingint = 0;
-        billingint = Integer.parseInt(billingteam1.substring(1));
+        int billingint2 = Integer.parseInt(billingteam2.substring(1));
+        int billingint = Integer.parseInt(billingteam1.substring(1));
 
         if(billingint2>billingint){
             System.out.println("Billing info updated correctly");
@@ -123,7 +117,6 @@ public class AdvisorUserTests extends Setup {
         System.out.println(invoiceCount);
         System.out.println(invoiceCount2);
     }
-
 
 //    @Test(priority=3)
 //    public void addingUser(){

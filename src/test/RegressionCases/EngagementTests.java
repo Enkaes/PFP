@@ -1,5 +1,6 @@
 package test.RegressionCases;
 
+import AppEnv.Helper.EngagementSender;
 import AppEnv.Helper.Navigator;
 import AppEnv.Setup;
 import AppEnv.User;
@@ -12,9 +13,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 
+
 public class EngagementTests extends Setup {
 
     private Navigator navigator = new Navigator();
+    private EngagementSender sender = new EngagementSender();
 
     @Test(priority = 1)
     public void createEngagement() {
@@ -81,6 +84,8 @@ public class EngagementTests extends Setup {
             pin = driver.findElement(By.cssSelector("code.text-muted.px-1")).getText();
         }
 
+        //TODO: use EngagementSender here
+
         //possible problem with Engage button
         driver.findElement(By.cssSelector("div.toolbar.btn-toolbar.justify-content-between div.btn-group button.btn.btn-primary")).click();
 
@@ -96,9 +101,10 @@ public class EngagementTests extends Setup {
             e.printStackTrace();
         }
 
-        //Access Engagement
+//        Access Engagement
         String engagementUrl;
         engagementUrl = driver.findElement(By.cssSelector("input.form-control.text-dark.cursor-select")).getAttribute("value");
+
         driver.get(engagementUrl);
         wait3.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.pfp-engagement-footer")));
         driver.findElement(By.cssSelector("button.pfp-engagement-button.start")).click();
@@ -116,6 +122,8 @@ public class EngagementTests extends Setup {
             driver.findElement(By.cssSelector("input[type='password']")).sendKeys(User.password);
             driver.findElement(By.cssSelector("button[type='submit']")).click();
         }
+
+//      TODO:  sender.accessEngagement();
 
         try {
             Thread.sleep(3000);
