@@ -3,17 +3,32 @@ package AppEnv.Helper;
 import AppEnv.Setup;
 import AppEnv.User;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.Set;
+
 public class EngagementSender extends Setup {
 
     private Navigator navigator = new Navigator();
-
-    public String pin = "0";
-
+    private String pin = "0";
     private static String engagementUrl;
+
+    private void openInNewTab() {
+        Set<String> windows = driver.getWindowHandles();
+        String mainWindow = driver.getWindowHandle();
+        ((JavascriptExecutor) driver).executeScript("window.open();");
+        Set<String> engagementWindow = driver.getWindowHandles();
+        engagementWindow.removeAll(windows);
+        String customerSiteHandle = ((String) engagementWindow.toArray()[0]);
+        driver.switchTo().window(customerSiteHandle);
+    }
+
+//    public void switchTab(){
+//        driver.switchTo().window(mainWindow);
+//    }
 
     public void sendEngagement() {
 
@@ -49,20 +64,17 @@ public class EngagementSender extends Setup {
         }
 
         //Copy engagement url, close drawer
-        engagementUrl = driver.findElement(By.cssSelector("input.form-control.text-dark.cursor-select")).getAttribute("value");
+        engagementUrl = driver.findElement(By.cssSelector("input.form-control.text-dark.cursor-select ")).getAttribute("value");
         driver.findElement(By.cssSelector("div.form-row button[type='button']")).click();
-
     }
 
-    public void getSentEngagementUrl(){
-        driver.get(engagementUrl);
-    }
-
-    public void accessEngagement(){
-
+    public void accessEngagement() {
         WebDriverWait wait3 = new WebDriverWait(driver, 5);
 
+//        openInNewTab();
+
         driver.get(engagementUrl);
+
         wait3.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.pfp-engagement-footer")));
         driver.findElement(By.cssSelector("button.pfp-engagement-button.start")).click();
 
@@ -81,9 +93,13 @@ public class EngagementSender extends Setup {
         }
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(7000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    public void getSentEngagementUrl() {
+        driver.get(engagementUrl);
     }
 }

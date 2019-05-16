@@ -1,11 +1,10 @@
-package test.RegressionCases;
+package test.VariousCases;
 
 import AppEnv.Helper.EngagementSender;
 import AppEnv.Helper.Navigator;
 import AppEnv.Setup;
 import AppEnv.User;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;

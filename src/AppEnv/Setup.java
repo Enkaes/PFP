@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 
 public class Setup {
 
-    private static final String DOMAIN = "https://dev.precisefp";
+    private static final String DOMAIN = "https://app.precisefp";
     private static final String PORT = ".com/";
     public static String baseUrl() {
         return(DOMAIN+PORT);

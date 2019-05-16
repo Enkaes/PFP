@@ -1,4 +1,4 @@
-package test.RegressionCases;
+package test.VariousCases;
 
 import AppEnv.Setup;
 import org.openqa.selenium.By;

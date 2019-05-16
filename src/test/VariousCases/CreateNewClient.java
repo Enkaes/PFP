@@ -1,4 +1,4 @@
-package test.RegressionCases;
+package test.VariousCases;
 
 import AppEnv.Helper.Navigator;
 import AppEnv.Setup;
@@ -39,7 +39,7 @@ public class CreateNewClient extends Setup {
         driver.findElement(By.cssSelector("button[type='submit']")).click();
 
         try {
-            Thread.sleep(1000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -109,7 +109,7 @@ public class CreateNewClient extends Setup {
         driver.findElement(By.cssSelector("div.navbar-nav.ml-auto a:nth-child(6)")).click();
 
         try {
-            Thread.sleep(1000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
